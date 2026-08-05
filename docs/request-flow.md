@@ -95,7 +95,7 @@ sequenceDiagram
 
   Dev->>Dev: 코드 수정
   Dev->>GH: git push origin main
-  Dev->>TS: ssh storkspear@100.76.10.127
+  Dev->>TS: ssh <mac-mini-user>@<tailscale-ip>
   TS->>MM: SSH 세션
   MM->>GH: cd ~/sites/portfolio && git pull
   GH-->>MM: 새 파일들
